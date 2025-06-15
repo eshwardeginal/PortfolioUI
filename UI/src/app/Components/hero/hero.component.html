@@ -1,0 +1,23 @@
+<section class="hero">
+    <div class="hero-left">
+        <p>Hi, I am</p>
+        <h1>{{userProfile[0]?.name}}</h1>
+        <h3>{{userProfile[0]?.tagline}}</h3>
+        <h2>{{userProfile[0]?.about}}</h2>
+        <div class="social-icons">
+            <a [href]="'mailto:' + userProfile[0]?.email" target="_blank">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a [href]="userProfile[0]?.gitHub" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a [href]="userProfile[0]?.linkedIn" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+
+    </div>
+    <div class="hero-right">
+        <img src="assets/profile.jpg" alt="Profile" />
+    </div>
+</section>

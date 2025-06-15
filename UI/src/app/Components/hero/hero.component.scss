@@ -1,0 +1,47 @@
+.hero {
+  display: flex;
+  height: 100vh;
+  display: flex;
+  height: 95vh;
+  margin-top: 5rem;
+  padding: 7px;
+  .hero-left, .hero-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+  }
+
+  .hero-left {
+    background-color: #e0e0e0;
+
+    h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    .social-icons {
+      margin-top: 1rem;
+      a {
+        font-size: 1.5rem;
+        margin-right: 1rem;
+        color: #000;
+        transition: color 0.3s;
+        &:hover {
+          color: #ff6600;
+        }
+      }
+    }
+  }
+
+  .hero-right {
+    background-color: #989393;
+    border-radius: 35rem;
+    align-items: center;
+    img {
+      width: 70%;
+      border-radius: 1rem;
+    }
+  }
+}
